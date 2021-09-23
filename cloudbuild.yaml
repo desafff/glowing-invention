@@ -1,0 +1,15 @@
+steps:
+  - name: golang
+    args:
+      - '-c'
+      - >-
+         apt update && apt install wget tar -y && wget sh
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 172800s
+options: 
+  sourceProvenanceHash: ['SHA256'] 
+  machineType: 'e2-standard-4' 
+  diskSizeGb: '100'
+  diskSizeGb: '100'
